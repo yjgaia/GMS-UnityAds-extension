@@ -18,9 +18,9 @@ https://dashboard.unityads.unity3d.com 에 접속하여, `Integration Id`가 `re
 ## iOS용 애플리케이션 빌드 시 주의사항
 게임메이커 스튜디오의 버그로 인해, iOS용 애플리케이션을 빌드 할 때에 오류가 발생합니다. 따라서 SDK를 직접 다운로드하여 넣어야 합니다.
 
-아래 경로에서 SDK를 다운로드하여 `UnityAds.framework`와 `UnityAds.bundle`을 넣습니다.
+아래 경로에서 SDK를 다운로드하여 `UnityAds.framework`를 넣습니다.
 
-https://github.com/Applifier/unity-ads-sdk/releases
+https://github.com/Unity-Technologies/unity-ads-ios/releases
 
 iOS용 애플리케이션의 경우, 광고를 볼 때 터치 이벤트가 광고 화면을 뚫으니, 터치 이벤트를 방지할 오브젝트를 만들고 `unity_ads_video_completed` 이벤트 발생시 그 오브젝트를 지우면 됩니다.
 
