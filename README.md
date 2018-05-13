@@ -1,6 +1,8 @@
 # GMS-UnityAds-extension
 GameMaker: Studio 용 유니티 광고 익스텐션 소스 코드 및 샘플입니다. Android와 iOS 환경에서 실행 가능합니다.
 
+***GMS1, GMS2 둘 다 사용 가능합니다. 단, 샘플 프로젝트는 GMS1로 개발되어 있습니다.***
+
 ## 설치 방법
 Extensions에서 `UnityAds.gmez`를 Import 합니다.
 
