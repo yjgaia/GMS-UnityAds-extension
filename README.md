@@ -5,8 +5,7 @@
 https://dashboard.unityads.unity3d.com 에 접속하여, `Integration Id`가 `rewardedVideo`인 Ad placement를 생성합니다.
 
 ## 함수
-* `unity_ads_init(game_id)` Unity Ads를 초기화합니다.
-* `unity_ads_set_test_mode(is_test_mode)` 테스트 모드로 실행하려면 `is_test_mode`를 `true`로 설정합니다. 출시 할 때는 `false`로 설정합니다.
+* `unity_ads_init(game_id, is_test_mode)` Unity Ads를 초기화합니다. 테스트 모드로 실행하려면 `is_test_mode`를 `true`로 설정합니다. 출시 할 때는 `false`로 설정합니다.
 * `unity_ads_check_is_can_show()` Unity Ads가 현재 사용 가능한지 확인합니다.
 * `unity_ads_show()` 광고를 출력합니다.
 
