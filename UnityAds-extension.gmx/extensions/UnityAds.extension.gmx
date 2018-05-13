@@ -19,17 +19,34 @@
   <maclinkerflags></maclinkerflags>
   <maccompilerflags></maccompilerflags>
   <androidinject>&lt;activity
-android:name="com.unity3d.ads.android.view.UnityAdsFullscreenActivity"
-android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
-android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-android:hardwareAccelerated="true"/&gt;</androidinject>
+            android:name="com.unity3d.ads.adunit.AdUnitActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /&gt;
+        &lt;activity
+            android:name="com.unity3d.ads.adunit.AdUnitTransparentActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" /&gt;
+        &lt;activity
+            android:name="com.unity3d.ads.adunit.AdUnitTransparentSoftwareActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" /&gt;
+        &lt;activity
+            android:name="com.unity3d.ads.adunit.AdUnitSoftwareActivity"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /&gt;</androidinject>
+  <androidmanifestinject></androidmanifestinject>
+  <iosplistinject></iosplistinject>
+  <androidactivityinject></androidactivityinject>
   <gradleinject></gradleinject>
   <iosSystemFrameworks/>
   <iosThirdPartyFrameworks/>
   <androidPermissions>
     <Permission>android.permission.ACCESS_NETWORK_STATE</Permission>
     <Permission>android.permission.INTERNET</Permission>
-    <Permission>android.permission.WRITE_EXTERNAL_STORAGE</Permission>
   </androidPermissions>
   <IncludedResources/>
   <files>
@@ -51,21 +68,11 @@ android:hardwareAccelerated="true"/&gt;</androidinject>
           <name>unity_ads_init</name>
           <externalName>unity_ads_init</externalName>
           <kind>11</kind>
-          <help>unity_ads_init(game_id)</help>
+          <help>unity_ads_init(game_id, is_test_mode)</help>
           <returnType>2</returnType>
-          <argCount>1</argCount>
+          <argCount>2</argCount>
           <args>
             <arg>1</arg>
-          </args>
-        </function>
-        <function>
-          <name>unity_ads_set_test_mode</name>
-          <externalName>unity_ads_set_test_mode</externalName>
-          <kind>11</kind>
-          <help>unity_ads_set_test_mode(is_test_mode)</help>
-          <returnType>2</returnType>
-          <argCount>1</argCount>
-          <args>
             <arg>2</arg>
           </args>
         </function>
